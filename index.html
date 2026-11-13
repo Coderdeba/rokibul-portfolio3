@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rokibul Hassan | IT Professional</title>
+  <meta name="description" content="Rokibul Hassan — IT Support Professional focused on hardware, software, networking and IT infrastructure." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="font-sans antialiased">
+  <!-- scroll progress -->
+  <div id="progress" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed inset-x-0 top-0 z-50 transition-all">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#home" class="logo font-serif text-2xl font-semibold tracking-tight">RH<span class="text-accent">.</span></a>
+
+      <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <button id="themeToggle" class="icon-btn ml-2" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon">☾</span>
+        </button>
+        <a href="#contact" class="btn-pill ml-2">Contact ↗</a>
+      </nav>
+
+      <div class="flex items-center gap-2 md:hidden">
+        <button id="themeToggleM" class="icon-btn" aria-label="Toggle theme"><span class="theme-icon">☾</span></button>
+        <button id="menuBtn" class="icon-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu md:hidden">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="text-accent">Contact ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="relative mx-auto grid min-h-screen max-w-6xl items-center gap-12 px-5 pb-16 pt-28 lg:grid-cols-12">
+      <div class="lg:col-span-7">
+        <p class="eyebrow reveal"><span class="dot"></span> IT SUPPORT · SYSTEM ADMINISTRATION</p>
+        <p class="reveal mt-6 text-lg text-muted" style="--d:.05s">Hello, I'm</p>
+        <h1 class="reveal font-serif text-5xl font-semibold leading-[1.02] tracking-tight sm:text-7xl" style="--d:.1s">
+          Rokibul <span class="text-grad italic">Hassan.</span>
+        </h1>
+        <h2 class="reveal mt-6 max-w-xl text-xl font-medium leading-snug sm:text-2xl" style="--d:.18s">
+          IT Support Professional focused on reliable technology and smooth operations.
+        </h2>
+        <p class="reveal mt-4 max-w-xl text-muted" style="--d:.24s">
+          I work across hardware, software, networking and IT infrastructure — helping users solve technical problems and keeping systems running efficiently.
+        </p>
+
+        <div class="reveal mt-8 flex flex-wrap gap-3" style="--d:.3s">
+          <a href="#contact" class="btn-solid">Let's connect ↗</a>
+          <a href="#experience" class="btn-ghost">View experience</a>
+        </div>
+
+        <div class="reveal mt-12 grid max-w-xl grid-cols-1 gap-4 sm:grid-cols-3" style="--d:.38s">
+          <div class="stat"><b>2025 — Now</b><span>Junior Executive (IT)</span></div>
+          <div class="stat"><b>Akij Venture</b><span>Current organization</span></div>
+          <div class="stat"><b>BSc CSE</b><span>Computer Science Engineering</span></div>
+        </div>
+      </div>
+
+      <!-- photo + ops panel -->
+      <div class="relative lg:col-span-5">
+        <div class="reveal relative mx-auto max-w-sm" style="--d:.15s">
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Rokibul Hassan" width="800" height="1000" class="h-full w-full object-cover" />
+            <div class="photo-shade"></div>
+            <div class="chip chip-top"><span class="dot"></span> Open to opportunities</div>
+          </div>
+
+          <div class="float-card award-chip">
+            <span class="text-accent">✦</span>
+            <div><b>Best Performer 2026</b><small>Akij Venture Ltd.</small></div>
+          </div>
+          <div class="float-card solver-chip">
+            <span class="text-accent">✓</span>
+            <div><b>Problem solver</b><small>Support · Maintain · Improve</small></div>
+          </div>
+        </div>
+
+        <div class="reveal panel mx-auto mt-14 max-w-sm" style="--d:.3s">
+          <div class="panel-bar">
+            <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
+            <em>IT OPERATIONS / OVERVIEW</em>
+          </div>
+          <p class="panel-title">SYSTEM HEALTH</p>
+          <ul class="panel-list">
+            <li><i>⌘</i><div><b>Hardware</b><small>Maintenance &amp; diagnostics</small></div><span class="status ok">ACTIVE</span></li>
+            <li><i>⌁</i><div><b>Network</b><small>Connectivity monitoring</small></div><span class="status ok">ONLINE</span></li>
+            <li><i>▣</i><div><b>Infrastructure</b><small>Data center &amp; CCTV</small></div><span class="status rdy">READY</span></li>
+          </ul>
+          <p class="panel-title mt-4">CORE FOCUS</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="tag">IT SUPPORT</span><span class="tag">SYSTEM ADMINISTRATION</span>
+            <span class="tag">NETWORKING</span><span class="tag">DATA CENTER OPERATIONS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <p class="eyebrow reveal">01 / ABOUT ME</p>
+      <h2 class="h2 reveal">Technology should work <span class="text-grad italic">for people.</span></h2>
+
+      <div class="mt-10 grid gap-10 lg:grid-cols-12">
+        <div class="reveal lg:col-span-5">
+          <h3 class="font-serif text-2xl leading-snug">I enjoy making technology dependable, understandable and useful.</h3>
+        </div>
+        <div class="reveal space-y-4 text-muted lg:col-span-7">
+          <p>I am an IT professional with experience supporting hardware, software and network-related issues. My work includes installing and configuring systems, troubleshooting equipment, monitoring data center and CCTV operations, assisting users and coordinating with vendors.</p>
+          <p>I aim to contribute to an organization through practical technical skills, responsibility, teamwork and a willingness to keep learning.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="tag">Technical Support</span><span class="tag">Troubleshooting</span>
+            <span class="tag">System Administration</span><span class="tag">Networking</span><span class="tag">IT Operations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <p class="eyebrow reveal">02 / EXPERIENCE</p>
+      <h2 class="h2 reveal">My professional <span class="text-grad italic">journey.</span></h2>
+
+      <div class="timeline mt-12">
+        <article class="t-item reveal">
+          <span class="t-dot live"></span>
+          <div class="card">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <time class="mono-label">JUNE 2025 — PRESENT</time>
+              <span class="badge">CURRENT ROLE</span>
+            </div>
+            <h3 class="mt-3 font-serif text-2xl font-semibold">Junior Executive (IT)</h3>
+            <h4 class="text-accent font-medium">Akij Venture Ltd.</h4>
+            <p class="mt-1 text-sm text-muted">Akij House · Tejgaon–Gulshan Link Road, Dhaka</p>
+            <ul class="check-list mt-5">
+              <li>Provide technical support for hardware, software and network-related issues.</li>
+              <li>Install, configure and troubleshoot operating systems, applications and IT equipment.</li>
+              <li>Perform hardware maintenance, troubleshooting and system upgrades.</li>
+              <li>Monitor data center operations and CCTV surveillance systems.</li>
+              <li>Assist users with IT-related problems and maintain technical documentation.</li>
+              <li>Coordinate with vendors for IT equipment and service-related issues.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="t-item reveal">
+          <span class="t-dot"></span>
+          <div class="card">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <time class="mono-label">FEBRUARY 2025 — MAY 2025</time>
+              <span class="badge badge-dim">INTERNSHIP</span>
+            </div>
+            <h3 class="mt-3 font-serif text-2xl font-semibold">IT Intern</h3>
+            <h4 class="text-accent font-medium">Akij Venture Ltd.</h4>
+            <p class="mt-1 text-sm text-muted">Akij House · Tejgaon–Gulshan Link Road, Dhaka</p>
+            <ul class="check-list mt-5">
+              <li>Assisted in hardware and software troubleshooting.</li>
+              <li>Supported system installation, configuration and maintenance activities.</li>
+              <li>Helped monitor network connectivity and IT infrastructure.</li>
+              <li>Provided user support for day-to-day technical issues.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <p class="eyebrow reveal">03 / SKILLS &amp; EXPERTISE</p>
+      <h2 class="h2 reveal">What I bring <span class="text-grad italic">to the table.</span></h2>
+
+      <div class="mt-12 grid gap-5 md:grid-cols-2">
+        <div class="card reveal">
+          <h3 class="card-title">Technical skills</h3>
+          <ul class="skill-list">
+            <li>IT Support &amp; Troubleshooting</li>
+            <li>System Administration</li>
+            <li>Computer Hardware Installation &amp; Maintenance</li>
+            <li>Software Installation &amp; Configuration</li>
+            <li>Network Configuration &amp; Troubleshooting</li>
+            <li>Data Center Operations, CCTV &amp; BMS Monitoring</li>
+            <li>Vendor Coordination &amp; Technical Documentation</li>
+          </ul>
+        </div>
+
+        <div class="space-y-5">
+          <div class="card reveal">
+            <h3 class="card-title">Computer skills</h3>
+            <ul class="skill-list">
+              <li>Microsoft Office (Word, Excel, PowerPoint, Outlook)</li>
+              <li>Windows OS installation &amp; configuration</li>
+              <li>Internet &amp; email communication · Basic networking</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3 class="card-title">Soft skills</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">Communication</span><span class="tag">Problem-solving</span>
+              <span class="tag">Teamwork</span><span class="tag">Time management</span>
+              <span class="tag">Adaptability</span><span class="tag">Quick learning</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <h3 class="card-title">Languages</h3>
+            <ul class="skill-list">
+              <li><b>Bengali</b> — Fluent</li>
+              <li><b>English</b> — Professional Working Proficiency (Written &amp; Spoken)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- award -->
+      <div class="award reveal mt-8">
+        <div class="award-star">✦</div>
+        <div class="flex-1">
+          <p class="mono-label">RECOGNITION · JUNE 26, 2026</p>
+          <h3 class="mt-1 font-serif text-3xl font-semibold">Best Performer 2026</h3>
+          <p class="mt-2 max-w-2xl text-muted">Awarded by Akij Venture Ltd. in recognition of outstanding performance, dedication and contribution to organizational success.</p>
+        </div>
+        <div class="award-year">2026</div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <p class="eyebrow reveal">04 / EDUCATION</p>
+      <h2 class="h2 reveal">Academic <span class="text-grad italic">background.</span></h2>
+
+      <div class="mt-12 space-y-4">
+        <article class="edu reveal">
+          <time class="mono-label">2019–2023</time>
+          <div>
+            <h3 class="font-serif text-xl font-semibold sm:text-2xl">B.Sc. in Computer Science &amp; Engineering</h3>
+            <p class="text-muted">Stamford University of Bangladesh · Dhaka</p>
+            <p class="mt-1 text-sm text-accent">CGPA: 3.06 / 4.00</p>
+          </div>
+          <span class="edu-badge">CSE</span>
+        </article>
+        <article class="edu reveal">
+          <time class="mono-label">2017</time>
+          <div>
+            <h3 class="font-serif text-xl font-semibold sm:text-2xl">Higher Secondary Certificate (HSC)</h3>
+            <p class="text-muted">University Laboratory High School &amp; College · Science</p>
+            <p class="mt-1 text-sm text-accent">GPA: 3.33 / 5.00</p>
+          </div>
+          <span class="edu-badge">HSC</span>
+        </article>
+        <article class="edu reveal">
+          <time class="mono-label">2015</time>
+          <div>
+            <h3 class="font-serif text-xl font-semibold sm:text-2xl">Secondary School Certificate (SSC)</h3>
+            <p class="text-muted">Motijheel Model High School and College · Science</p>
+            <p class="mt-1 text-sm text-accent">GPA: 5.00 / 5.00</p>
+          </div>
+          <span class="edu-badge">SSC</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="contact-box reveal">
+        <p class="eyebrow">05 / GET IN TOUCH</p>
+        <h2 class="h2">Have an opportunity? <span class="text-grad italic">Let's talk.</span></h2>
+        <p class="mt-4 max-w-xl text-muted">I'm open to professional conversations, IT opportunities and meaningful collaborations.</p>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+          <a href="mailto:rokibul.hassan1750@gmail.com" class="contact-link">
+            <small>EMAIL</small><b>rokibul.hassan1750@gmail.com ↗</b>
+          </a>
+          <a href="tel:+8801781548404" class="contact-link">
+            <small>PHONE</small><b>+880 1781-548404 ↗</b>
+          </a>
+        </div>
+        <div class="contact-link mt-4 cursor-default">
+          <small>LOCATION</small><b>Dhaka, Bangladesh</b>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 border-t border-line px-5 py-8 text-sm text-muted">
+    <a href="#home" class="logo font-serif text-xl font-semibold">RH<span class="text-accent">.</span></a>
+    <p>© <span id="year">2026</span> Rokibul Hassan. All rights reserved.</p>
+    <a href="#home" class="hover:text-accent">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
